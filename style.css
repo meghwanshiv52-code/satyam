@@ -1,0 +1,157 @@
+/* --- Color Variables --- */
+:root {
+    --dark-blue: #004d40; /* Primary Color: Dark Teal/Green (Professional) */
+    --orange-warning: #ffb300; /* Accent Color: Amber/Warning */
+    --primary-color: #00796b; /* Slightly lighter shade of primary */
+    --light-gray: #f0f4f7; /* Soft Background Color */
+}
+
+/* --- Global Styles --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--dark-blue);
+    font-weight: 700;
+}
+
+.text-dark-blue {
+    color: var(--dark-blue) !important;
+}
+
+.bg-dark-blue {
+    background-color: var(--dark-blue) !important;
+}
+
+/* --- Header Top Bar Style --- */
+.header-top-bar {
+    background-color: var(--dark-blue); /* Using dark blue background */
+    font-size: 0.9rem;
+}
+
+.top-phone-link {
+    transition: color 0.3s;
+}
+
+.top-phone-link:hover {
+    color: var(--orange-warning) !important;
+}
+
+
+/* --- Header & Navigation --- */
+.main-header {
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Styling */
+.logo-text-blue {
+    color: var(--dark-blue);
+    font-weight: 900;
+    font-size: 1.8rem;
+}
+
+.logo-text-orange {
+    color: var(--orange-warning);
+    font-weight: 900;
+    font-size: 1.8rem;
+}
+
+/* Navigation Links */
+.main-nav .nav-link {
+    color: var(--dark-blue);
+    font-weight: 600;
+    transition: color 0.2s, border-bottom 0.2s;
+    border-bottom: 2px solid transparent;
+}
+
+.main-nav .nav-link:hover,
+.main-nav .nav-link.active-nav {
+    color: var(--orange-warning);
+    border-bottom: 2px solid var(--orange-warning);
+}
+
+.quote-btn {
+    background-color: var(--orange-warning);
+    color: var(--dark-blue);
+    font-weight: 700;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.quote-btn:hover {
+    background-color: #ff9800;
+    color: var(--dark-blue);
+}
+
+/* --- Hero Section --- */
+#hero {
+    /* Replace with your actual hero image (e.g., ssc-hero.jpg) */
+    background: linear-gradient(rgba(0, 77, 64, 0.8), rgba(0, 77, 64, 0.8)), url('images/ssc-hero.jpg') no-repeat center center;
+    background-size: cover;
+    height: 75vh; 
+}
+
+.hero-content h1 {
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+.hero-content p {
+    font-size: 1.4rem;
+}
+
+/* --- Section Titles --- */
+.section-title {
+    font-size: 2.2rem;
+    color: var(--dark-blue);
+    border-bottom: 4px solid var(--orange-warning);
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+/* --- Card Styles --- */
+.highlight-card, .course-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #ddd;
+}
+
+.highlight-card:hover, .course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 77, 64, 0.15) !important;
+}
+
+.course-card .card-body {
+    border-top: 5px solid var(--orange-warning);
+}
+
+/* --- Pop-up Modal Styling --- */
+.modal-content {
+    border: 5px solid var(--dark-blue);
+    border-radius: 15px;
+}
+.modal-title {
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+.btn-danger {
+    background-color: #d32f2f; /* Deep Red for urgency */
+    border-color: #d32f2f;
+}
+.btn-danger:hover {
+    background-color: #c62828;
+    border-color: #c62828;
+}
+
+/* Specific styles for About page teachers */
+.teacher-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 4px solid var(--orange-warning);
+}
+
+
